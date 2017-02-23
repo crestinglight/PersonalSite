@@ -59,7 +59,18 @@ body {
 	
 }
 
-.icons img {
+.icons a {
+	text-indent: -9999px;
+}
+
+#twitterIcon {
+	background: url(images/twitter_gray.png) top left no-repeat;
+	background-size: cover;
+	max-width: 50px;
+	text-indent: -9999px;
+}
+
+/*.icons img {
 	width: 25px;
 	margin: 5px;
 	opacity: 0.4;
@@ -67,7 +78,7 @@ body {
 
 .icons img:hover {
 	opacity: 1;
-}
+}*/
 
 .shortcuts a {
 	text-decoration: none;

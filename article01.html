@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+    <meta charset="utf-8">
+    <title>Evin Grost</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Heebo:100" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    </head>
+    
+    <body>
+    
+        <div class="header">
+            <h1>EVIN GROST</h1>
+            <h4>Student @ OCS</h4>
+        </div>
+
+        <div class="menu" style="display: none;">
+            <div class="icons">
+                <a href="#" id="twitterIcon"><img src="images/twitter_gray.png" onmouseover="this.src='images/twitter_rollover.png'" onmouseout="this.src='images/twitter_gray.png'"></a>
+                <a href="#" id="gitIcon"><img src="images/github_gray.png" onmouseover="this.src='images/github_rollover.png'" onmouseout="this.src='images/github_gray.png'"></a>
+                <a href="#" id="linkedIcon"><img src="images/linkedin_gray.png" onmouseover="this.src='images/linkedin_rollover.png'" onmouseout="this.src='images/linkedin_gray.png'"></a>
+            </div>
+            <div class="shortcuts">
+                <a href="#">ARTICLES</a>
+                <a href="#">ABOUT</a>
+            </div>
+        </div>
+        <div class="pageContent">
+            <div class="articleInformation">
+                <div class="articleTitle">Loading Polyfills Only When Needed</div>
+                <div class="articleDate">September 27, 2016</div>
+                <div class="articleContent">
+                    <p>New JavaScript and HTML features are being introduced all the time that make our lives as developers easier. </p> 
+                    <p>In many cases, these new features are so helpful we choose to use them on production websites before they're fully implemented in all browsers. To not break the experience for users on older browsers, we of course include polyfills for any not-fully-supported features.</p>
+                    <p>The problem with this approach is it prioritizes</p>
+                    <p>Legacy browser support is your problem; it shouldn't be their problem too.</p>
+                </div>
+            </div>
+            <div class="footnotes">
+                <h3>Footnotes:</h3>
+                <ol>
+                    <li>Application-level dependencies that are conditionally loaded are still deterministic within an app's module dependency graph. Polyfills, on the other hand, are dependent on both whether the module is ever loaded as well as whether the browser supports the API natively. This means mechanisms like Webpack's <span>code splitting</span> feature (via <span class="inlineCode">require.ensure</span>) are not themselves sufficient to conditionally load polyfills: an additional wrapper module is still necessary to run the feature detect (see <span>previous attempts</span> to accomplish this).</li>
+                    <li>Internet Explorer versions before 9 do not support the <span class="inlineCode">onload</span> method. If you need to support these old browsers, you also have to add <span>an <span class="inlineCode">onreadystate</span> handler</span>.</li>
+                    <li>Autoprefixer does this via browserlist and its <span>custom usage data</span> option.
+                </ol>
+            </div>
+
+            <div class="twitterShareArticle">
+                
+            </div>
+         
+        </div>
+    <footer class="footerclass">
+    </footer>
+    </body>
+    
+</html>
